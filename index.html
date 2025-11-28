@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+  <div class="container">
+    <h2>Todo List</h2>
+
+    <!-- Add Task Form -->
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Enter new Task..." required />
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="active">Active</button>
+      <button data-filter="completed">Completed</button>
+    </div>
+
+    <!-- Counter -->
+    <p id="counter">0 tasks left</p>
+
+    <!-- Todo List -->
+    <ul id="todo-list"></ul>
+  </div>
+
+   <script src="script.js"></script> 
+</body>
+</html>
